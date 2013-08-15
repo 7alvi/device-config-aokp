@@ -113,7 +113,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.sys.usb.config=mass_storage \
     persist.service.adb.enable=1
 
-$(call inherit-product, build/target/product/full.mk)
+PRODUCT_NAME := aokp
+PRODUCT_DEVICE := generic
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Full Android on Em
 DEVICE_PACKAGE_OVERLAYS += device/htc/pico/overlay
 
 # Publish that we support the live wallpaper feature.
